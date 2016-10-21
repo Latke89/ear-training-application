@@ -1,6 +1,6 @@
-    angular.module('MidiApp', [])
+    angular.module('MidiApp', ['ngMaterial', 'ngMessages'])
    .controller('midi-controller', function($scope, $http, $timeout) {
-    $scope.user;
+//    $scope.user;
     $scope.maxIntervalLevel;
     $scope.currentIntervalLevel
     $scope.initialInterval;
@@ -21,6 +21,26 @@
     var teoriaContainer;
     $scope.teoriaOutput;
     var a4;
+
+        $scope.user = {
+          title: 'Developer',
+          email: 'ipsum@lorem.com',
+          firstName: '',
+          lastName: '',
+          company: 'Google',
+          address: '1600 Amphitheatre Pkwy',
+          city: 'Mountain View',
+          state: 'CA',
+          biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
+          postalCode: '94043'
+        };
+
+        $scope.states = ('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS ' +
+        'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI ' +
+        'WY').split(' ').map(function(state) {
+            return {abbrev: state};
+          });
+
 
         $scope.login = function(loginContainer) {
             console.log(loginContainer);
