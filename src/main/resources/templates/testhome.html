@@ -13,46 +13,21 @@
     <title>Musictheorytrianer</title>
         <title>Musictheorytrainer</title>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="js/Audiolet.js"></script>
-    <script src="../static/js/Audiolet.js"></script>
     <script src="js/midi-controller.js"></script>
     <script src="../static/js/midi-controller.js"></script>
-    <script src="js/teoria.js"></script>
-    <script src="../static/js/teoria.js"></script>
     <script src="https://npmcdn.com/vexflow@1.2.83/releases/vexflow-debug.js"></script>
-    <script src="js/score.js"></script>
-    <script src="../static/js/score.js"></script>
-    <link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
     <link rel="stylesheet" href="stylesheet.css"/>
 
 
 </head>
 
-<!--<body ng-controller="midi-controller">-->
 <body ng-controller="midi-controller">
 
-<img class="image" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJQhNprdLuqdK__vEoQfoaC5n9equzV-0rRfuR92U15GISME8VUmZVlQ">
-<h1 class="header">
-    Music Theory Trainer
-</h1>
-<div class="booContainer">
-<div id="boo"></div>
-</div>
-<div class="container">
-
-<input class="noteInput" type="text" placeholder="Note" ng-model="noteContainer.note" ng-bind="noteContainer.note">
-<input class="octaveInput" type="text" placeholder="Octave" ng-model="noteContainer.octave" ng-bind="noteContainer.octave">
-<input class="button" type="button" value="Print note on score" ng-click="userInput(noteContainer)"/>
-</div>
 <br><br><br><br><br><br><br><br><br>
 
-<!--<input type="button" value="Play Interval" ng-click="">-->
-<!--<input type="button" ng-click="score()" value="Show score"/>-->
-<div class="trueBox"></div>
-<div class="falseBox"></div>
-</body>
 
 </html>
 
